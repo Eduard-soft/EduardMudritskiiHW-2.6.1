@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		23D5462C2735B3BE009F591B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D5462B2735B3BE009F591B /* AppDelegate.swift */; };
 		23D5462E2735B3BE009F591B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D5462D2735B3BE009F591B /* SceneDelegate.swift */; };
-		23D546302735B3BE009F591B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D5462F2735B3BE009F591B /* ViewController.swift */; };
+		23D546302735B3BE009F591B /* EnterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D5462F2735B3BE009F591B /* EnterViewController.swift */; };
 		23D546332735B3BE009F591B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23D546312735B3BE009F591B /* Main.storyboard */; };
 		23D546352735B3C3009F591B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23D546342735B3C3009F591B /* Assets.xcassets */; };
 		23D546382735B3C3009F591B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23D546362735B3C3009F591B /* LaunchScreen.storyboard */; };
+		23D546472735B7A8009F591B /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D546462735B7A8009F591B /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		23D546282735B3BE009F591B /* EduardMudritskiiHW 2.6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EduardMudritskiiHW 2.6.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		23D5462B2735B3BE009F591B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23D5462D2735B3BE009F591B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		23D5462F2735B3BE009F591B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		23D5462F2735B3BE009F591B /* EnterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterViewController.swift; sourceTree = "<group>"; };
 		23D546322735B3BE009F591B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		23D546342735B3C3009F591B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23D546372735B3C3009F591B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		23D546392735B3C3009F591B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23D546462735B7A8009F591B /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,48 @@
 		23D5462A2735B3BE009F591B /* EduardMudritskiiHW 2.6 */ = {
 			isa = PBXGroup;
 			children = (
+				23D546432735B4CE009F591B /* ViewControllers */,
+				23D546442735B502009F591B /* Storyboards */,
+				23D546452735B60D009F591B /* Resources */,
+				23D546402735B462009F591B /* Configs */,
+			);
+			path = "EduardMudritskiiHW 2.6";
+			sourceTree = "<group>";
+		};
+		23D546402735B462009F591B /* Configs */ = {
+			isa = PBXGroup;
+			children = (
 				23D5462B2735B3BE009F591B /* AppDelegate.swift */,
 				23D5462D2735B3BE009F591B /* SceneDelegate.swift */,
-				23D5462F2735B3BE009F591B /* ViewController.swift */,
-				23D546312735B3BE009F591B /* Main.storyboard */,
-				23D546342735B3C3009F591B /* Assets.xcassets */,
 				23D546362735B3C3009F591B /* LaunchScreen.storyboard */,
 				23D546392735B3C3009F591B /* Info.plist */,
 			);
-			path = "EduardMudritskiiHW 2.6";
+			path = Configs;
+			sourceTree = "<group>";
+		};
+		23D546432735B4CE009F591B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				23D5462F2735B3BE009F591B /* EnterViewController.swift */,
+				23D546462735B7A8009F591B /* SettingsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		23D546442735B502009F591B /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				23D546312735B3BE009F591B /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		23D546452735B60D009F591B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				23D546342735B3C3009F591B /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +173,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23D546302735B3BE009F591B /* ViewController.swift in Sources */,
+				23D546302735B3BE009F591B /* EnterViewController.swift in Sources */,
 				23D5462C2735B3BE009F591B /* AppDelegate.swift in Sources */,
 				23D5462E2735B3BE009F591B /* SceneDelegate.swift in Sources */,
+				23D546472735B7A8009F591B /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +327,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = P529959SPU;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "EduardMudritskiiHW 2.6/Info.plist";
+				INFOPLIST_FILE = "EduardMudritskiiHW 2.6/Configs/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -306,7 +342,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -319,7 +355,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = P529959SPU;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "EduardMudritskiiHW 2.6/Info.plist";
+				INFOPLIST_FILE = "EduardMudritskiiHW 2.6/Configs/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -334,7 +370,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
